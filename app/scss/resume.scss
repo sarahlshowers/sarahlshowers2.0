@@ -1,0 +1,109 @@
+//hello
+.resume-container {
+  width: 85%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+
+  a:link,
+  a:visited {
+    color: $primary-medium;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $accent-light;
+  }
+
+  a:active {
+    color: lightcoral;
+  }
+}
+
+.resume-header {
+  width: 100%;
+  background-color: $primary-medium;
+  position: relative;
+  padding: 50px 10%;
+
+  img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+  }
+}
+
+.resume-main {
+  padding-top: 20px;
+}
+
+
+
+/*******************************
+FLOATED COLUMNS
+*******************************/
+
+.column {
+  float: left;
+}
+
+.col-left {
+  width: 20%;
+}
+
+.col-center {
+  width: 55%;
+}
+
+.col-right {
+  width: 25%;
+}
+
+
+
+/*******************************
+CENTER COLUMN CONTENT
+*******************************/
+
+.col-center {
+  position: relative;
+
+  .education {
+    padding-top: 36px;
+  }
+
+  .education > div,
+  .experince > div,
+  .projects > div,
+  .contact > div {
+    margin: 10px 0;
+  }
+
+  .education,
+  .experince,
+  .projects,
+  .contact {
+    margin-bottom: 20px;
+  }
+
+  .experince {
+    .apple {
+      a:link,
+      a:visited {
+        color: $dark-grey;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .phone::before {
+    content: "";
+    background-size: 20px 20px;
+    background: url('../img/icon-phone.svg');
+    display: inline-block;
+  }
+}

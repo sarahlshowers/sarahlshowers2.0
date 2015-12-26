@@ -1,0 +1,85 @@
+/*******************************
+MAIN HOMEPAGE STYLES
+*******************************/
+
+.intro + .callout {
+  margin-bottom: 50px;
+}
+
+.primary-content,
+.main-footer {
+	text-align: center;
+}
+
+.primary-content {
+	padding-top: 0;
+	padding-bottom: 50px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+	border-bottom: 2px solid $light-grey;
+}
+
+
+
+/*******************************
+LAYOUT STYLES
+*******************************/
+
+.primary-content,
+.secondary-content {
+	width: 85%;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: auto;
+	max-width: 960px;
+}
+
+.resume {
+	color: white;
+	text-align: left;
+	background: #434a52;
+	background-size: cover;
+	border-radius: 10px;
+
+  h2 {
+		position: relative;
+		top: 460px;
+		left: 30px;
+	}
+
+	p {
+		position: relative;
+		top: 410px;
+		left: 240px;
+	}
+}
+
+
+
+/*******************************
+MEDIA QUERIES
+*******************************/
+
+@media (max-width: 1024px) {
+	.primary-content,
+	.secondary-content {
+		width: 90%;
+	}
+
+	.portfolio {
+		padding: 10% 12%;
+		margin: 50px 0 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.primary-content,
+	.secondary-content {
+		width: 100%;
+		padding: 20px;
+		border-top: none;
+	}
+}

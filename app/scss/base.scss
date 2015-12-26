@@ -1,0 +1,66 @@
+/*******************************
+BASE PAGE STYLES
+*******************************/
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  margin: 30px 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.callout {
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.t-border {
+  border-top: 2px solid $light-grey;
+}
+
+
+
+/*******************************
+PSEUDO CLASSES
+*******************************/
+
+a:link,
+a:visited {
+  color: $accent-dark;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $accent-light;
+}
+
+a:active {
+  color: lightcoral;
+}
+
+
+
+/*******************************
+CLEAR FIX
+*******************************/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
