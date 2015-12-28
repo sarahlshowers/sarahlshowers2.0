@@ -1,9 +1,9 @@
 /*******************************
-MAIN HOMEPAGE STYLES
+LAYOUT STYLES
 *******************************/
 
-.intro + .callout {
-  margin-bottom: 50px;
+.intro {
+  margin-bottom: 20px;
 }
 
 .primary-content,
@@ -11,30 +11,21 @@ MAIN HOMEPAGE STYLES
 	text-align: center;
 }
 
-.primary-content {
-	padding-top: 0;
-	padding-bottom: 50px;
-}
-
-.secondary-content {
-	padding-top: 80px;
-	padding-bottom: 70px;
-	border-bottom: 2px solid $light-grey;
-}
-
-
-
-/*******************************
-LAYOUT STYLES
-*******************************/
-
 .primary-content,
 .secondary-content {
-	width: 85%;
-	padding-left: 50px;
-	padding-right: 50px;
 	margin: auto;
 	max-width: 960px;
+	padding-bottom: 70px;
+	border-bottom: 2px solid lightgray;
+}
+
+.primary-content {
+	padding: 0 100px 50px 100px;
+	width: 70%;
+}
+
+.secondary-content {
+	padding-bottom: 70px;
 }
 
 .resume {

@@ -136,10 +136,10 @@ h1 {
   margin: 12px 0 0; }
 
 h2 {
-  font-size: 3.3125em;
+  font-size: 2.2125em;
   font-weight: normal;
-  line-height: 1.1;
-  margin: 0 0 .5em 12%; }
+  line-height: 0.9;
+  margin: 40px 0 .5em 5%; }
 
 h3 {
   font-size: 1.25em;
@@ -147,15 +147,13 @@ h3 {
   line-height: 1.2;
   margin-bottom: 1.7em; }
 
+h5 {
+  margin: 10px 0 0 5%;
+  font-size: 1em; }
+
 p {
   font-size: 1em;
   line-height: 1.3; }
-
-/*******************************
-SITE-WIDE TYPOGRAPHY OVERRIDES
-*******************************/
-.callout {
-  font-size: 1.25em; }
 
 /*******************************
 HOMEPAGE TYPOGRAPHY
@@ -223,34 +221,28 @@ MEDIA QUERIES
   .arrow {
     display: none; } }
 /*******************************
-MAIN HOMEPAGE STYLES
+LAYOUT STYLES
 *******************************/
-.intro + .callout {
-  margin-bottom: 50px; }
+.intro {
+  margin-bottom: 20px; }
 
 .primary-content,
 .main-footer {
   text-align: center; }
 
-.primary-content {
-  padding-top: 0;
-  padding-bottom: 50px; }
-
+.primary-content,
 .secondary-content {
-  padding-top: 80px;
+  margin: auto;
+  max-width: 960px;
   padding-bottom: 70px;
   border-bottom: 2px solid lightgray; }
 
-/*******************************
-LAYOUT STYLES
-*******************************/
-.primary-content,
+.primary-content {
+  padding: 0 100px 50px 100px;
+  width: 70%; }
+
 .secondary-content {
-  width: 85%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px; }
+  padding-bottom: 70px; }
 
 .resume {
   color: white;
@@ -332,10 +324,12 @@ POSITIONING EXAMPLES
   border: 3px dashed #6e2231; }
 
 .resume-container {
-  width: 85%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: solid 2px #6e2231;
+  border-top: solid 20px #6e2231;
+  border-radius: 20px;
   max-width: 960px; }
   .resume-container a:link,
   .resume-container a:visited {
@@ -360,7 +354,9 @@ POSITIONING EXAMPLES
     margin-right: 30px; }
 
 .resume-main {
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px; }
 
 /*******************************
 FLOATED COLUMNS
@@ -403,5 +399,17 @@ CENTER COLUMN CONTENT
     background-size: 20px 20px;
     background: url("../img/icon-phone.svg");
     display: inline-block; }
+
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 10px solid lightgray; }
+
+/*******************************
+MEDIA QUERIES
+*******************************/
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 20px 0; } }
 
 /*# sourceMappingURL=styles.css.map */

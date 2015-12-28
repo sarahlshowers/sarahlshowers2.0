@@ -1,9 +1,10 @@
-//hello
 .resume-container {
-  width: 85%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
+  width: 100%;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: solid 2px $accent-dark;
+  border-top: solid 20px $accent-dark;
+  border-radius: 20px;
   max-width: 960px;
 
   a:link,
@@ -39,6 +40,8 @@
 
 .resume-main {
   padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 
