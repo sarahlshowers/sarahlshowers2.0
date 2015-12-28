@@ -3,8 +3,10 @@
   margin-left: 50px;
   margin-right: 50px;
   border: solid 2px $accent-dark;
-  border-top: solid 20px $accent-dark;
+  border-top: 20px solid $accent-dark;
   border-radius: 20px;
+  width: 85%;
+  margin: auto;
   max-width: 960px;
 
   a:link,
@@ -20,6 +22,10 @@
   a:active {
     color: lightcoral;
   }
+}
+
+li {
+  color: $dark-grey;
 }
 
 .resume-header {
@@ -69,6 +75,61 @@ FLOATED COLUMNS
 
 
 /*******************************
+LEFT COLUMN CONTENT
+*******************************/
+
+.col-left {
+  padding-right: 15px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .education {
+    padding-top: 26px;
+
+
+    .dbc {
+      margin-top: 3px;
+    }
+
+    .college {
+      margin-top: 30px;
+    }
+  }
+
+  .experince {
+    padding-top: 41px;
+
+    ul {
+      .apple {
+        margin-top: 5px;
+      }
+
+      .freelance {
+        margin-top: 27px;
+      }
+    }
+  }
+
+  .projects {
+    margin-bottom: 260px;
+    padding-top: 29px;
+  }
+
+  .contact {
+    padding-top: 19px;
+  }
+}
+
+
+/*******************************
 CENTER COLUMN CONTENT
 *******************************/
 
@@ -77,6 +138,7 @@ CENTER COLUMN CONTENT
 
   .education {
     padding-top: 36px;
+    margin-bottom: 61px;
   }
 
   .education > div,
@@ -86,14 +148,12 @@ CENTER COLUMN CONTENT
     margin: 10px 0;
   }
 
-  .education,
-  .experince,
-  .projects,
   .contact {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .experince {
+    margin-bottom: 28px;
     .apple {
       a:link,
       a:visited {
@@ -103,10 +163,171 @@ CENTER COLUMN CONTENT
     }
   }
 
+  .email::before,
   .phone::before {
     content: "";
-    background-size: 20px 20px;
-    background: url('../img/icon-phone.svg');
     display: inline-block;
   }
+
+  .phone::before {
+    background: url("img/phone-icon.svg") no-repeat;
+    height: 30px;
+    width: 20px;
+  }
+
+  .email::before {
+    background: url("img/email-icon.svg") no-repeat;
+    height: 22px;
+    width: 26px;
+  }
+
+  .email,
+  .phone {
+    a {
+      position: relative;
+      color: $dark-grey;
+    }
+  }
+
+  .email {
+    a {
+      left: 10px;
+      top: -7px;
+    }
+  }
+
+  .phone {
+    a {
+      left: 16px;
+      top: -9px;
+    }
+  }
 }
+
+
+
+/*******************************
+RIGHT COLUMN CONTENT
+*******************************/
+
+.col-right {
+  padding: 0 15px 0 10px;
+
+  h4 {
+    margin: 20px 0 10px;
+  }
+
+  .skills {
+    padding-top: 26px;
+    position: relative;
+
+    h4 {
+      margin-top: 0;
+    }
+
+    .layout {
+      position: relative;
+      left: 50%;
+      margin-left: -80px;
+
+      &.row-first {
+        img {
+          padding-left: 0.5rem;
+        }
+      }
+
+      &.row-second {
+        img {
+          &:last-child {
+            position: absolute;
+            bottom: 8px;
+            right: 116px;
+          }
+        }
+      }
+
+      &.row-third {
+        padding-left: 10%;
+
+        img {
+          &:first-child {
+            margin-bottom: 33px;
+            padding-right: 0.5rem;
+          }
+        }
+      }
+
+      &.row-fourth {
+        padding-left: 13%;
+      }
+
+      &.row-fifth {
+        img {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .achievements {
+    ul {
+      margin: 0;
+    }
+
+    li {
+      font-size: 0.8em;
+    }
+  }
+
+  .other {
+    ul {
+      margin-top: 10px;
+      margin-bottom: 0;
+      position: relative;
+      left: 50%;
+      margin-left: -80px;
+    }
+    li {
+      display: inline-block;
+      padding-left: 0.55rem;
+
+      &:first-child{
+        padding-left: 0;
+      }
+
+      &:nth-child(2n) {
+        position: relative;
+        top: 10px;
+      }
+
+      img {
+        height: 25px;
+      }
+    }
+  }
+
+  .follow {
+    h4 {
+      margin-top: 0;
+    }
+
+    ul {
+      margin-top: 0;
+      li {
+        a {
+          color: $dark-grey;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    img {
+      height: 25px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+

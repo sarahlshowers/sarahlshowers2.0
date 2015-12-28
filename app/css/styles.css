@@ -62,8 +62,7 @@ BASE PAGE STYLES
 
 img {
   max-width: 100%;
-  margin-bottom: 20px;
-  border-radius: 10px; }
+  margin-bottom: 20px; }
 
 ul,
 ol {
@@ -328,8 +327,10 @@ POSITIONING EXAMPLES
   margin-left: 50px;
   margin-right: 50px;
   border: solid 2px #6e2231;
-  border-top: solid 20px #6e2231;
+  border-top: 20px solid #6e2231;
   border-radius: 20px;
+  width: 85%;
+  margin: auto;
   max-width: 960px; }
   .resume-container a:link,
   .resume-container a:visited {
@@ -339,6 +340,9 @@ POSITIONING EXAMPLES
     color: #bb5569; }
   .resume-container a:active {
     color: lightcoral; }
+
+li {
+  color: #6b6b6b; }
 
 .resume-header {
   width: 100%;
@@ -374,31 +378,139 @@ FLOATED COLUMNS
   width: 25%; }
 
 /*******************************
+LEFT COLUMN CONTENT
+*******************************/
+.col-left {
+  padding-right: 15px; }
+  .col-left ul {
+    margin: 0;
+    padding: 0; }
+    .col-left ul li {
+      padding-bottom: 0;
+      margin-bottom: 0; }
+  .col-left .education {
+    padding-top: 26px; }
+    .col-left .education .dbc {
+      margin-top: 3px; }
+    .col-left .education .college {
+      margin-top: 30px; }
+  .col-left .experince {
+    padding-top: 41px; }
+    .col-left .experince ul .apple {
+      margin-top: 5px; }
+    .col-left .experince ul .freelance {
+      margin-top: 27px; }
+  .col-left .projects {
+    margin-bottom: 260px;
+    padding-top: 29px; }
+  .col-left .contact {
+    padding-top: 19px; }
+
+/*******************************
 CENTER COLUMN CONTENT
 *******************************/
 .col-center {
   position: relative; }
   .col-center .education {
-    padding-top: 36px; }
+    padding-top: 36px;
+    margin-bottom: 61px; }
   .col-center .education > div,
   .col-center .experince > div,
   .col-center .projects > div,
   .col-center .contact > div {
     margin: 10px 0; }
-  .col-center .education,
-  .col-center .experince,
-  .col-center .projects,
   .col-center .contact {
-    margin-bottom: 20px; }
-  .col-center .experince .apple a:link,
-  .col-center .experince .apple a:visited {
-    color: #6b6b6b;
-    text-decoration: none; }
+    margin-bottom: 30px; }
+  .col-center .experince {
+    margin-bottom: 28px; }
+    .col-center .experince .apple a:link,
+    .col-center .experince .apple a:visited {
+      color: #6b6b6b;
+      text-decoration: none; }
+  .col-center .email::before,
   .col-center .phone::before {
     content: "";
-    background-size: 20px 20px;
-    background: url("../img/icon-phone.svg");
     display: inline-block; }
+  .col-center .phone::before {
+    background: url("img/phone-icon.svg") no-repeat;
+    height: 30px;
+    width: 20px; }
+  .col-center .email::before {
+    background: url("img/email-icon.svg") no-repeat;
+    height: 22px;
+    width: 26px; }
+  .col-center .email a,
+  .col-center .phone a {
+    position: relative;
+    color: #6b6b6b; }
+  .col-center .email a {
+    left: 10px;
+    top: -7px; }
+  .col-center .phone a {
+    left: 16px;
+    top: -9px; }
+
+/*******************************
+RIGHT COLUMN CONTENT
+*******************************/
+.col-right {
+  padding: 0 15px 0 10px; }
+  .col-right h4 {
+    margin: 20px 0 10px; }
+  .col-right .skills {
+    padding-top: 26px;
+    position: relative; }
+    .col-right .skills h4 {
+      margin-top: 0; }
+    .col-right .skills .layout {
+      position: relative;
+      left: 50%;
+      margin-left: -80px; }
+      .col-right .skills .layout.row-first img {
+        padding-left: 0.5rem; }
+      .col-right .skills .layout.row-second img:last-child {
+        position: absolute;
+        bottom: 8px;
+        right: 116px; }
+      .col-right .skills .layout.row-third {
+        padding-left: 10%; }
+        .col-right .skills .layout.row-third img:first-child {
+          margin-bottom: 33px;
+          padding-right: 0.5rem; }
+      .col-right .skills .layout.row-fourth {
+        padding-left: 13%; }
+      .col-right .skills .layout.row-fifth img {
+        margin-bottom: 0; }
+  .col-right .achievements ul {
+    margin: 0; }
+  .col-right .achievements li {
+    font-size: 0.8em; }
+  .col-right .other ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: relative;
+    left: 50%;
+    margin-left: -80px; }
+  .col-right .other li {
+    display: inline-block;
+    padding-left: 0.55rem; }
+    .col-right .other li:first-child {
+      padding-left: 0; }
+    .col-right .other li:nth-child(2n) {
+      position: relative;
+      top: 10px; }
+    .col-right .other li img {
+      height: 25px; }
+  .col-right .follow h4 {
+    margin-top: 0; }
+  .col-right .follow ul {
+    margin-top: 0; }
+    .col-right .follow ul li a {
+      color: #6b6b6b;
+      font-size: 0.9rem; }
+  .col-right .follow img {
+    height: 25px;
+    margin-bottom: 0; }
 
 .main-footer {
   padding-top: 20px;
