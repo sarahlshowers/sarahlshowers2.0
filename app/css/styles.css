@@ -198,9 +198,10 @@ RESUME TYPOGRAPHY
     color: #fff; }
 
 .main-header {
-  padding-top: 140px;
+  padding-top: 110px;
   height: 500px;
-  background: linear-gradient(#39bba1, transparent 80%), linear-gradient(0deg, #fff, transparent 100%), #116e5c url("../img/hero-background.jpg") 100%;
+  margin-left: -40px;
+  background: linear-gradient(#39bba1, transparent 80%), linear-gradient(0deg, #fff, transparent 100%), #116e5c url("../img/hero-background.png") 100%;
   background-size: cover;
   margin-bottom: 60px;
   text-align: center; }
