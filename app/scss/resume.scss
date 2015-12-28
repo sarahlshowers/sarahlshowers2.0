@@ -1,11 +1,10 @@
 .resume-container {
-  width: 100%;
   margin-left: 50px;
   margin-right: 50px;
   border: solid 2px $accent-dark;
   border-top: 20px solid $accent-dark;
   border-radius: 20px;
-  width: 85%;
+  width: 90%;
   margin: auto;
   max-width: 960px;
 
@@ -92,7 +91,7 @@ LEFT COLUMN CONTENT
   }
 
   .education {
-    padding-top: 26px;
+    padding-top: 46px;
 
 
     .dbc {
@@ -105,7 +104,7 @@ LEFT COLUMN CONTENT
   }
 
   .experince {
-    padding-top: 41px;
+    padding-top: 46px;
 
     ul {
       .apple {
@@ -119,12 +118,12 @@ LEFT COLUMN CONTENT
   }
 
   .projects {
-    margin-bottom: 260px;
-    padding-top: 29px;
+    margin-bottom: 255px;
+    padding-top: 30px;
   }
 
   .contact {
-    padding-top: 19px;
+    padding-top: 85px;
   }
 }
 
@@ -163,24 +162,6 @@ CENTER COLUMN CONTENT
     }
   }
 
-  .email::before,
-  .phone::before {
-    content: "";
-    display: inline-block;
-  }
-
-  .phone::before {
-    background: url("img/phone-icon.svg") no-repeat;
-    height: 30px;
-    width: 20px;
-  }
-
-  .email::before {
-    background: url("img/email-icon.svg") no-repeat;
-    height: 22px;
-    width: 26px;
-  }
-
   .email,
   .phone {
     a {
@@ -190,6 +171,11 @@ CENTER COLUMN CONTENT
   }
 
   .email {
+    img {
+      margin-bottom: 7px;
+      height: 15px;
+    }
+
     a {
       left: 10px;
       top: -7px;
@@ -197,6 +183,12 @@ CENTER COLUMN CONTENT
   }
 
   .phone {
+    img {
+      margin-bottom: 9px;
+      margin-left: 5px;
+      height: 25px;
+    }
+
     a {
       left: 16px;
       top: -9px;
@@ -214,7 +206,7 @@ RIGHT COLUMN CONTENT
   padding: 0 15px 0 10px;
 
   h4 {
-    margin: 20px 0 10px;
+    margin: 25px 0 15px;
   }
 
   .skills {
@@ -222,7 +214,7 @@ RIGHT COLUMN CONTENT
     position: relative;
 
     h4 {
-      margin-top: 0;
+      margin-top: 20px;
     }
 
     .layout {
@@ -322,8 +314,28 @@ RIGHT COLUMN CONTENT
     }
 
     img {
-      height: 25px;
+      padding-right: 10px;
       margin-bottom: 0;
+    }
+
+    .github {
+      img {
+        height: 20px;
+      }
+    }
+
+    .linkedin {
+      img {
+        height: 20px;
+        padding-left: 4px;
+        padding-right: 12px;
+      }
+    }
+
+    .twitter {
+      img {
+        height: 18px;
+      }
     }
   }
 }

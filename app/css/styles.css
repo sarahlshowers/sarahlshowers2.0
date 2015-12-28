@@ -324,13 +324,12 @@ POSITIONING EXAMPLES
   border: 3px dashed #6e2231; }
 
 .resume-container {
-  width: 100%;
   margin-left: 50px;
   margin-right: 50px;
   border: solid 2px #6e2231;
   border-top: 20px solid #6e2231;
   border-radius: 20px;
-  width: 85%;
+  width: 90%;
   margin: auto;
   max-width: 960px; }
   .resume-container a:link,
@@ -390,22 +389,22 @@ LEFT COLUMN CONTENT
       padding-bottom: 0;
       margin-bottom: 0; }
   .col-left .education {
-    padding-top: 26px; }
+    padding-top: 46px; }
     .col-left .education .dbc {
       margin-top: 3px; }
     .col-left .education .college {
       margin-top: 30px; }
   .col-left .experince {
-    padding-top: 41px; }
+    padding-top: 46px; }
     .col-left .experince ul .apple {
       margin-top: 5px; }
     .col-left .experince ul .freelance {
       margin-top: 27px; }
   .col-left .projects {
-    margin-bottom: 260px;
-    padding-top: 29px; }
+    margin-bottom: 255px;
+    padding-top: 30px; }
   .col-left .contact {
-    padding-top: 19px; }
+    padding-top: 85px; }
 
 /*******************************
 CENTER COLUMN CONTENT
@@ -428,25 +427,20 @@ CENTER COLUMN CONTENT
     .col-center .experince .apple a:visited {
       color: #6b6b6b;
       text-decoration: none; }
-  .col-center .email::before,
-  .col-center .phone::before {
-    content: "";
-    display: inline-block; }
-  .col-center .phone::before {
-    background: url("img/phone-icon.svg") no-repeat;
-    height: 30px;
-    width: 20px; }
-  .col-center .email::before {
-    background: url("img/email-icon.svg") no-repeat;
-    height: 22px;
-    width: 26px; }
   .col-center .email a,
   .col-center .phone a {
     position: relative;
     color: #6b6b6b; }
+  .col-center .email img {
+    margin-bottom: 7px;
+    height: 15px; }
   .col-center .email a {
     left: 10px;
     top: -7px; }
+  .col-center .phone img {
+    margin-bottom: 9px;
+    margin-left: 5px;
+    height: 25px; }
   .col-center .phone a {
     left: 16px;
     top: -9px; }
@@ -457,12 +451,12 @@ RIGHT COLUMN CONTENT
 .col-right {
   padding: 0 15px 0 10px; }
   .col-right h4 {
-    margin: 20px 0 10px; }
+    margin: 25px 0 15px; }
   .col-right .skills {
     padding-top: 26px;
     position: relative; }
     .col-right .skills h4 {
-      margin-top: 0; }
+      margin-top: 20px; }
     .col-right .skills .layout {
       position: relative;
       left: 50%;
@@ -510,8 +504,16 @@ RIGHT COLUMN CONTENT
       color: #6b6b6b;
       font-size: 0.9rem; }
   .col-right .follow img {
-    height: 25px;
+    padding-right: 10px;
     margin-bottom: 0; }
+  .col-right .follow .github img {
+    height: 20px; }
+  .col-right .follow .linkedin img {
+    height: 20px;
+    padding-left: 4px;
+    padding-right: 12px; }
+  .col-right .follow .twitter img {
+    height: 18px; }
 
 .main-footer {
   padding-top: 20px;
