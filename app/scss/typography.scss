@@ -69,6 +69,17 @@ p {
 HOMEPAGE TYPOGRAPHY
 *******************************/
 
+nav {
+  h2 {
+    margin: 0;
+    padding: 15px 0 .5em 5%;
+    &.white-override {
+      color: #fff;
+      font-size: 1.5em;
+    }
+  }
+}
+
 .title {
   color: white;
   font-size: 1.625rem;
