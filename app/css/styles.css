@@ -515,6 +515,16 @@ RIGHT COLUMN CONTENT
   .col-right .follow .twitter img {
     height: 18px; }
 
+.portfolio-content {
+  display: block;
+  width: 100%; }
+  .portfolio-content > div {
+    display: inline-block;
+    width: 33%; }
+  .portfolio-content h4 {
+    margin-top: 10px;
+    margin-left: 13px; }
+
 .main-footer {
   padding-top: 20px;
   padding-bottom: 20px;
