@@ -1,15 +1,36 @@
-nav {
-  background-color: $primary-medium;
-}
-
 .main-header {
   padding-top: 110px;
   height: 500px;
-  margin-left: -40px;
   background: linear-gradient($primary-medium, transparent 80%), linear-gradient(0deg, #fff, transparent 100%), #116e5c url("../img/hero-background.png") 100%;
   background-size: cover;
   margin-bottom: 60px;
   text-align: center;
+}
+
+nav {
+  h2 {
+    display: none;
+
+    &.sticky {
+      display: block;
+      margin: 0;
+      padding-top: 12px;
+      box-shadow: 0 1px 6px 1px $dark-grey;
+      top: 0;
+      position: fixed;
+      width: 100%;
+      height: 50px;
+      background: $primary-medium;
+      text-align: left;
+      z-index: 1;
+    }
+  }
+}
+
+.primary-content {
+  &.sticky {
+    padding-top: 250px;
+  }
 }
 
 .arrow {

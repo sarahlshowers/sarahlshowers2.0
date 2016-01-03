@@ -1,6 +1,6 @@
-//page scroll behavior
-
 $(function() {
+
+  //page scroll behavior
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -13,4 +13,15 @@ $(function() {
       }
     }
   });
+
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 450){
+      $('nav h2').addClass('sticky');
+    } else {
+      $('.main-header, nav h2').removeClass('sticky');
+    }
+
+  });
+
 });
