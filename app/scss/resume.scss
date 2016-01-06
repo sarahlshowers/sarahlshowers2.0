@@ -342,4 +342,12 @@ RIGHT COLUMN CONTENT
 
 
 
+/*******************************
+MEDIA QUERIES
+*******************************/
 
+@media (max-width: 764px) {
+  .resume-container {
+    display: none;
+  }
+}

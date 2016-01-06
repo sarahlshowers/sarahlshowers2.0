@@ -62,7 +62,13 @@ MEDIA QUERIES
 
 	.portfolio {
 		padding: 10% 12%;
-		margin: 50px 0 20px;
+		margin: 0;
+	}
+
+	.main-header {
+		background: linear-gradient(#55bba7, #fff);
+		height: 290px;
+		margin-bottom: 0;
 	}
 }
 
@@ -70,7 +76,7 @@ MEDIA QUERIES
 	.primary-content,
 	.secondary-content {
 		width: 100%;
-		padding: 20px;
+		padding: 20px 10px;
 		border-top: none;
 	}
 }

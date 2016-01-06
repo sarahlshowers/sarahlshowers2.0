@@ -12,3 +12,32 @@
     margin-left: 13px;
    }
 }
+
+
+
+/*******************************
+MEDIA QUERIES
+*******************************/
+
+@media (max-width: 1024px) {
+  .portfolio-content {
+    > div {
+      width: 49%;
+      margin-bottom: 20px;
+      img {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .portfolio-content {
+    > div {
+      width: 100%;
+    }
+  }
+}

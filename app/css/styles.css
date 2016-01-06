@@ -181,7 +181,7 @@ nav h2 {
     border: none; }
 
   h1 {
-    font-size: 5rem;
+    font-size: 3.3rem;
     line-height: 1.1; }
 
   .intro {
@@ -207,7 +207,7 @@ RESUME TYPOGRAPHY
 .main-header {
   padding-top: 110px;
   height: 500px;
-  background: linear-gradient(#55bba7, transparent 80%), linear-gradient(0deg, #fff, transparent 100%), #116e5c url("../img/hero-background.png") 100%;
+  background: linear-gradient(#55bba7, transparent 80%), linear-gradient(0deg, #fff, transparent 100%), #55bba7 url("../img/hero-background.png") 100%;
   background-size: cover;
   margin-bottom: 60px;
   text-align: center; }
@@ -237,6 +237,9 @@ nav h2 {
 /*******************************
 MEDIA QUERIES
 *******************************/
+@media (max-width: 1024px) {
+  nav {
+    display: none; } }
 @media (max-width: 768px) {
   .main-header {
     max-height: 380px;
@@ -293,12 +296,17 @@ MEDIA QUERIES
 
   .portfolio {
     padding: 10% 12%;
-    margin: 50px 0 20px; } }
+    margin: 0; }
+
+  .main-header {
+    background: linear-gradient(#55bba7, #fff);
+    height: 290px;
+    margin-bottom: 0; } }
 @media (max-width: 768px) {
   .primary-content,
   .secondary-content {
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px;
     border-top: none; } }
 .resume-container {
   margin-left: 50px;
@@ -492,6 +500,12 @@ RIGHT COLUMN CONTENT
   .col-right .follow .twitter img {
     height: 18px; }
 
+/*******************************
+MEDIA QUERIES
+*******************************/
+@media (max-width: 764px) {
+  .resume-container {
+    display: none; } }
 .portfolio-content {
   display: block;
   width: 100%; }
@@ -502,6 +516,20 @@ RIGHT COLUMN CONTENT
     margin-top: 10px;
     margin-left: 13px; }
 
+/*******************************
+MEDIA QUERIES
+*******************************/
+@media (max-width: 1024px) {
+  .portfolio-content > div {
+    width: 49%;
+    margin-bottom: 20px; }
+    .portfolio-content > div img {
+      margin-bottom: 0; }
+    .portfolio-content > div h4 {
+      margin-top: 0; } }
+@media (max-width: 764px) {
+  .portfolio-content > div {
+    width: 100%; } }
 .main-footer {
   padding-top: 20px;
   padding-bottom: 20px;
