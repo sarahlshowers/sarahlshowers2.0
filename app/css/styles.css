@@ -503,6 +503,11 @@ RIGHT COLUMN CONTENT
   .col-right .follow .twitter img {
     height: 18px; }
 
+.resume-copy {
+  margin: 20px 50px; }
+  .resume-copy p {
+    line-height: 25px; }
+
 /*******************************
 MEDIA QUERIES
 *******************************/
