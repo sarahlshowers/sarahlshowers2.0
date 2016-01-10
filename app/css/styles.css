@@ -175,6 +175,9 @@ nav h2 {
   font-size: 1.25em;
   line-height: 1.6; }
 
+.copyright {
+  font-size: 0.75em; }
+
 @media (max-width: 768px) {
   .title {
     font-size: 1.3rem;
@@ -506,6 +509,9 @@ MEDIA QUERIES
 @media (max-width: 764px) {
   .resume-container {
     display: none; } }
+.portfolio {
+  padding-bottom: 100px; }
+
 .portfolio-content {
   display: block;
   width: 100%; }
