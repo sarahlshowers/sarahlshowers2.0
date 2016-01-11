@@ -10,7 +10,7 @@
   </head>
   <body>
 
-  <a name="top"><header id="top" class="main-header">
+  <a id="top"><header id="top" class="main-header">
     <div>
       <span class="title">Making the web a more beautiful place</span>
       <h1 class="main-title">Sarah Showers</h1> 
@@ -19,17 +19,17 @@
 
   <nav><a name="main">
     <h2 class="white-override">sarahlshowers.com</h2>
-  </nav></a>
+    <p><a href="#top">Back to top &#8963;</a></p>
+  </nav>
 
-  <div class="primary-content border-bottom">
-    <p class="intro">Sarah Showers, Web Developer by trade with a passion for learning. Take a look at some of the work Sarah has done in her <a href="#portfolio">portfolio</a>, or check out the code on <a target="_blank" href="https://github.com/sarahlshowers">Github</a>.</p>
+  <a id="main">
+  <div class="primary-content">
+    <p class="intro">Last year, 2015 was the year I struck out in the world as a Web Developer - You can see some of my most recent work in my <a href="#portfolio">portfolio</a>.</p>
+  </div></a>
 
-    <p class="intro">View or download Sarah's <a href="#resume">resume</a>. For more detail, checkout her <a target="_blank" href="https://linkedin.com/in/sarahlshowers" class="icons">LinkedIn</a> profile.</p>
-  </div>
-
-  <div class="secondary-content main-resume border-bottom">
-    <a name="resume"></a>
-    <h5><a href="#top">Back to top &#x3009;</a></h5>
+  <div class="secondary-content">
+    <a id="resume"></a>
+    <h5><a href="#top">Back to top &#8963;</a></h5>
 
     <h2>Resume</h2>
 
@@ -185,26 +185,38 @@
         </div><!-- End resume col-right -->
       </div><!-- End resume main-body -->
     </div><!-- End resume container -->
+
+    <div class="resume-copy">
+      <p>Download a copy</p>
+
+      <p>The best place to get an in depth run down of what I've been doing careerwise is to hop over to my <a target="_blank" href="https://linkedin.com/in/sarahlshowers" class="icons">LinkedIn</a> profile.</p>
+    </div>
   </div><!-- End resume content -->
 
-  <div class="secondary-content portfolio border-bottom">
-    <a name="portfolio"></a>
-    <h5><a href="#top">Back to top &#x3009; </a></h5>
+  <div class="secondary-content portfolio">
+    <a id="portfolio"></a>
+    <h5><a href="#top">Back to top &#8963; </a></h5>
     <h2>Portfolio</h2>
     <div class="portfolio-content">
       <div class="routewise">
         <a target="_blank" href="https://guarded-beach-1156.herokuapp.com/"><img src="img/routewise.png"></a>
         <h4><a target="_blank" href="https://guarded-beach-1156.herokuapp.com/">RouteWise</a></h4>
       </div>
+
       <div>
         <a target="_blank" href="http://kevinsmithgroup.com/"><img src="img/kstg.png"></a>
         <h4><a target="_blank" href="http://kevinsmithgroup.com/">Kevin Smith Transportation Group</a></h4>
+      </div>
+
+      <div>
+        <a target="_blank" href="https://github.com/sarahlshowers"><img class="visit-github" src="img/visit-github.png"></a>
+        <h4><a target="_blank" href="https://github.com/sarahlshowers">Other stuff on Github</a></h4>
       </div>
     </div>
   </div>
 
   <footer class="main-footer">
-    <p>&#169;2016 Sarah Showers</p>
+    <p class="copyright">&#169;2016 Sarah Showers</p>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

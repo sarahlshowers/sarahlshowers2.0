@@ -172,6 +172,23 @@ nav h2 {
   font-size: 1.25em;
   line-height: 1.6; }
 
+<<<<<<< HEAD
+=======
+.copyright {
+  font-size: 0.75em; }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.3rem;
+    border: none; }
+
+  h1 {
+    font-size: 3.3rem;
+    line-height: 1.1; }
+
+  .intro {
+    font-size: 1rem; } }
+>>>>>>> 6b156594fb4da86aca6e202748992ab557b51c22
 /*******************************
 TYPOGRAPHY: RESUME
 *******************************/
@@ -494,12 +511,20 @@ RIGHT COLUMN CONTENT
   .col-right .follow .twitter img {
     height: 18px; }
 
+.resume-copy {
+  margin: 20px 50px; }
+  .resume-copy p {
+    line-height: 25px; }
+
 /*******************************
 MEDIA QUERIES
 *******************************/
 @media (max-width: 764px) {
   .secondary-content.main-resume {
     display: none; } }
+.portfolio {
+  padding-bottom: 100px; }
+
 .portfolio-content {
   display: block;
   width: 100%;
@@ -507,6 +532,11 @@ MEDIA QUERIES
   .portfolio-content > div {
     display: inline-block;
     width: 33%; }
+
+.visit-github {
+  height: 194px;
+  padding-bottom: 17px;
+  padding-left: 14px; }
 
 /*******************************
 MEDIA QUERIES
