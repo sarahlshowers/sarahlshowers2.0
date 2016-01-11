@@ -8,22 +8,21 @@
 }
 
 nav {
-  h2 {
-    display: none;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding-top: 12px;
+  box-shadow: 0 1px 6px 1px $dark-grey;
+  width: 100%;
+  height: 50px;
+  background: $primary-medium;
+  text-align: left;
+  z-index: 1;
+  transform: translate3d(0, -200px, 0);
 
-    &.sticky {
-      display: block;
-      margin: 0;
-      padding-top: 12px;
-      box-shadow: 0 1px 6px 1px $dark-grey;
-      top: 0;
-      position: fixed;
-      width: 100%;
-      height: 50px;
-      background: $primary-medium;
-      text-align: left;
-      z-index: 1;
-    }
+  &.sticky {
+    transition: transform 0.5s ease-in;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -36,27 +35,4 @@ nav {
 .arrow {
   width: 50px;
   margin-top: 50px;
-}
-
-
-
-/*******************************
-MEDIA QUERIES
-*******************************/
-
-@media (max-width: 1024px) {
-  nav {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-header {
-    max-height: 380px;
-    padding: 50px 25px 0;
-  }
-
-  .arrow {
-    display: none;
-  }
 }

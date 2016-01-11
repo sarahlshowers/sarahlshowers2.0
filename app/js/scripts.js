@@ -16,10 +16,10 @@ $(function() {
 
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 450){
-      $('nav h2').addClass('sticky');
+    if ($(this).scrollTop() > 20){
+      $('nav').addClass('sticky');
     } else {
-      $('.main-header, nav h2').removeClass('sticky');
+      $('.main-header, nav').removeClass('sticky');
     }
 
   });

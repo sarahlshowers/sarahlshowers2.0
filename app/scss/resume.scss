@@ -15,11 +15,11 @@
   }
 
   a:hover {
-    color: $accent-light;
+    color: $accent-medium;
   }
 
   a:active {
-    color: lightcoral;
+    color: $accent-light;
   }
 }
 
@@ -347,7 +347,9 @@ MEDIA QUERIES
 *******************************/
 
 @media (max-width: 764px) {
-  .resume-container {
-    display: none;
+  .secondary-content {
+    &.main-resume {
+      display: none;
+    }
   }
 }

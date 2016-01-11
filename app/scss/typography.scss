@@ -66,19 +66,24 @@ p {
 
 
 /*******************************
-HOMEPAGE TYPOGRAPHY
+TYPOGRAPHY: MAIN BODY
 *******************************/
 
 nav {
   h2 {
     margin: 0;
-    padding: 15px 0 .5em 5%;
+    padding-left: 5%;
 
     &.white-override {
       color: #fff;
       font-size: 1.5em;
     }
   }
+}
+
+.primary-content,
+.main-footer {
+  text-align: center;
 }
 
 .title {
@@ -94,26 +99,10 @@ nav {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.3rem;
-    border: none;
-  }
-
-  h1 {
-    font-size: 3.3rem;
-    line-height: 1.1;
-  }
-
-  .intro {
-    font-size: 1rem;
-  }
-}
-
 
 
 /*******************************
-RESUME TYPOGRAPHY
+TYPOGRAPHY: RESUME
 *******************************/
 
 .resume-header-text {
@@ -135,5 +124,71 @@ RESUME TYPOGRAPHY
   .intro {
     text-transform: uppercase;
     color: #fff;
+  }
+}
+
+.resume {
+  color: white;
+  text-align: left;
+
+  h2 {
+    position: relative;
+    top: 460px;
+    left: 30px;
+  }
+
+  p {
+    position: relative;
+    top: 410px;
+    left: 240px;
+  }
+}
+
+
+
+/*******************************
+TYPOGRAPHY: RESUME
+*******************************/
+
+.portfolio-content {
+  h4 {
+    margin-top: 10px;
+    margin-left: 13px;
+  }
+}
+
+
+
+/*******************************
+TYPOGRAPHY: MEDIA QUERIES
+*******************************/
+
+@media (max-width: 1024px) {
+  .portfolio-content {
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.3rem;
+    border: none;
+  }
+
+  h1 {
+    font-size: 3.3rem;
+    line-height: 1.1;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
+
+  .portfolio-content {
+    h4 {
+      margin-left: 17px ;
+    }
   }
 }

@@ -1,16 +1,12 @@
 .portfolio-content {
   display: block;
   width: 100%;
+  padding: 0 40px;
 
   > div {
     display: inline-block;
     width: 33%;
   }
-
-   h4 {
-    margin-top: 10px;
-    margin-left: 13px;
-   }
 }
 
 
@@ -27,10 +23,13 @@ MEDIA QUERIES
       img {
         margin-bottom: 0;
       }
-      h4 {
-        margin-top: 0;
-      }
     }
+
+    padding: 0 30px;
+  }
+
+  .portfolio {
+    padding: 5% 0;
   }
 }
 
@@ -39,5 +38,11 @@ MEDIA QUERIES
     > div {
       width: 100%;
     }
+
+    padding: 0 5px;
+  }
+
+  .portfolio {
+    margin: 0 auto;
   }
 }

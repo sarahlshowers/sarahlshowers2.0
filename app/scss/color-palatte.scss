@@ -5,7 +5,7 @@ PRIMARY COLORS
 
 $primary-dark: rgba(17, 110, 92, 1);
 $primary-medium: rgba(85, 187, 167, 1);
-$primary-light: rgba(57, 187, 161, 1);
+$primary-light: rgba(57, 187, 161, 0.5);
 
 
 
@@ -14,8 +14,8 @@ ACCENT COLORS
 *******************************/
 
 $accent-dark: rgba(110, 34, 49, 1);
-$accent-light: rgba(187, 85, 105, 1);
-
+$accent-medium: rgba(187, 85, 105, 1);
+$accent-light: rgba(240, 128, 128, 1);
 
 
 /*******************************
