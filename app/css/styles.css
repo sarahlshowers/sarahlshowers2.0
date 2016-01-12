@@ -172,8 +172,6 @@ nav h2 {
   font-size: 1.25em;
   line-height: 1.6; }
 
-<<<<<<< HEAD
-=======
 .copyright {
   font-size: 0.75em; }
 
@@ -188,7 +186,6 @@ nav h2 {
 
   .intro {
     font-size: 1rem; } }
->>>>>>> 6b156594fb4da86aca6e202748992ab557b51c22
 /*******************************
 TYPOGRAPHY: RESUME
 *******************************/
@@ -258,7 +255,7 @@ nav {
   position: fixed;
   top: 0;
   margin: 0;
-  padding-top: 12px;
+  padding: 0 5%;
   box-shadow: 0 1px 6px 1px #6b6b6b;
   width: 100%;
   height: 50px;
@@ -269,6 +266,9 @@ nav {
   nav.sticky {
     transition: transform 0.5s ease-in;
     transform: translate3d(0, 0, 0); }
+  nav h2 {
+    line-height: 50px;
+    display: inline-block; }
 
 .primary-content.sticky {
   padding-top: 250px; }
@@ -276,6 +276,10 @@ nav {
 .arrow {
   width: 50px;
   margin-top: 50px; }
+
+.to-top-nav {
+  float: right;
+  line-height: 50px; }
 
 /*******************************
 LAYOUT STYLES
@@ -531,12 +535,12 @@ MEDIA QUERIES
   padding: 0 40px; }
   .portfolio-content > div {
     display: inline-block;
-    width: 33%; }
+    width: 32%; }
 
 .visit-github {
-  height: 194px;
-  padding-bottom: 17px;
-  padding-left: 14px; }
+  height: 173px;
+  padding-bottom: 15px;
+  padding-left: 10px; }
 
 /*******************************
 MEDIA QUERIES

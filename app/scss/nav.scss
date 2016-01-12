@@ -11,7 +11,7 @@ nav {
   position: fixed;
   top: 0;
   margin: 0;
-  padding-top: 12px;
+  padding: 0 5%;
   box-shadow: 0 1px 6px 1px $dark-grey;
   width: 100%;
   height: 50px;
@@ -24,6 +24,11 @@ nav {
     transition: transform 0.5s ease-in;
     transform: translate3d(0, 0, 0);
   }
+
+  h2 {
+    line-height: 50px;
+    display: inline-block;
+  }
 }
 
 .primary-content {
@@ -35,4 +40,9 @@ nav {
 .arrow {
   width: 50px;
   margin-top: 50px;
+}
+
+.to-top-nav {
+  float: right;
+  line-height: 50px;
 }
