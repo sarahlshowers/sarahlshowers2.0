@@ -170,7 +170,7 @@ nav h2 {
 
 .intro {
   font-size: 1.25em;
-  line-height: 1.6; }
+  line-height: 0.8; }
 
 .copyright {
   font-size: 0.75em; }
@@ -326,7 +326,8 @@ MEDIA QUERIES
   border-radius: 20px;
   width: 90%;
   margin: auto;
-  max-width: 960px; }
+  max-width: 960px;
+  background-color: #fff; }
   .resume-container a:link,
   .resume-container a:visited {
     color: #55bba7;
@@ -562,7 +563,8 @@ MEDIA QUERIES
 .main-footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 10px solid lightgray; }
+  border-bottom: 10px solid lightgray;
+  background-color: #fafafa; }
 
 /*******************************
 MEDIA QUERIES
