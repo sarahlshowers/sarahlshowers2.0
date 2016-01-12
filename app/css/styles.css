@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Rancho);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -104,6 +105,11 @@ body {
 
 h1 {
   color: #fff; }
+
+h1,
+h2,
+h3 {
+  font-family: 'Rancho', cursive; }
 
 h2,
 h3,
@@ -534,7 +540,7 @@ MEDIA QUERIES
     width: 32%; }
 
 .visit-github {
-  height: 173px;
+  height: 180px;
   padding-bottom: 15px;
   padding-left: 10px; }
 
