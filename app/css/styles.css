@@ -227,8 +227,14 @@ TYPOGRAPHY: MEDIA QUERIES
   .portfolio-content h4 {
     margin-top: 0; } }
 @media (max-width: 768px) {
+  nav h2 {
+    font-size: 1.75rem; }
+  nav p {
+    font-size: 0.75rem; }
+
   .title {
     font-size: 1.3rem;
+    line-height: 1.5;
     border: none; }
 
   h1 {
@@ -236,7 +242,8 @@ TYPOGRAPHY: MEDIA QUERIES
     line-height: 1.1; }
 
   .intro {
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: 1.8; }
 
   .portfolio-content h4 {
     margin-left: 17px; } }
@@ -277,6 +284,15 @@ nav {
   float: right;
   line-height: 50px; }
 
+/*******************************
+MEDIA QUERIES
+*******************************/
+@media (max-width: 768px) {
+  .main-header {
+    padding-top: 40px; }
+
+  nav {
+    padding-left: 0; } }
 /*******************************
 LAYOUT STYLES
 *******************************/
@@ -321,7 +337,7 @@ MEDIA QUERIES
 
   .primary-content {
     width: 80%;
-    padding: 20px 10px; } }
+    padding: 40px 10px 20px; } }
 .resume-container {
   margin-left: 50px;
   margin-right: 50px;
@@ -524,7 +540,7 @@ RIGHT COLUMN CONTENT
 MEDIA QUERIES
 *******************************/
 @media (max-width: 764px) {
-  .secondary-content.main-resume {
+  .secondary-content.resume {
     display: none; } }
 .portfolio {
   padding-bottom: 100px; }
@@ -563,7 +579,12 @@ MEDIA QUERIES
       width: 100%; }
 
   .portfolio {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .portfolio > h5 {
+      display: none; }
+
+  .visit-github {
+    height: 171px; } }
 .main-footer {
   padding-top: 20px;
   padding-bottom: 20px;

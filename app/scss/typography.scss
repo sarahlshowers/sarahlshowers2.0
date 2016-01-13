@@ -186,8 +186,20 @@ TYPOGRAPHY: MEDIA QUERIES
 }
 
 @media (max-width: 768px) {
+
+  nav {
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
+
   .title {
     font-size: 1.3rem;
+    line-height: 1.5;
     border: none;
   }
 
@@ -198,6 +210,7 @@ TYPOGRAPHY: MEDIA QUERIES
 
   .intro {
     font-size: 1rem;
+    line-height: 1.8;
   }
 
   .portfolio-content {

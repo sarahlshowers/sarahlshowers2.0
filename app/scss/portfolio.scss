@@ -53,5 +53,12 @@ MEDIA QUERIES
 
   .portfolio {
     margin: 0 auto;
+    > h5 {
+      display: none;
+    }
+  }
+
+  .visit-github {
+    height: 171px;
   }
 }

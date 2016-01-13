@@ -45,3 +45,19 @@ nav {
   float: right;
   line-height: 50px;
 }
+
+
+
+/*******************************
+MEDIA QUERIES
+*******************************/
+
+@media (max-width: 768px) {
+  .main-header {
+    padding-top: 40px;
+  }
+
+  nav{
+    padding-left: 0;
+  }
+}
