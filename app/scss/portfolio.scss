@@ -40,9 +40,13 @@ MEDIA QUERIES
   .portfolio {
     padding: 5% 0;
   }
+
+  .visit-github {
+    height: 210px;
+  }
 }
 
-@media (max-width: 764px) {
+@media (max-width: 736px) {
   .portfolio-content {
     > div {
       width: 100%;

@@ -52,7 +52,13 @@ nav {
 MEDIA QUERIES
 *******************************/
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .main-header {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 736px) {
   .main-header {
     padding-top: 40px;
   }

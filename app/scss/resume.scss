@@ -355,7 +355,14 @@ RIGHT COLUMN CONTENT
 MEDIA QUERIES
 *******************************/
 
-@media (max-width: 764px) {
+@media (max-width: 1024px) {
+  .resume-main {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 736px) {
   .secondary-content {
     &.resume {
       display: none;

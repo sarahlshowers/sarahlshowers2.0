@@ -226,7 +226,7 @@ TYPOGRAPHY: MEDIA QUERIES
 @media (max-width: 1024px) {
   .portfolio-content h4 {
     margin-top: 0; } }
-@media (max-width: 768px) {
+@media (max-width: 736px) {
   nav h2 {
     font-size: 1.75rem; }
   nav p {
@@ -287,7 +287,10 @@ nav {
 /*******************************
 MEDIA QUERIES
 *******************************/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .main-header {
+    padding-top: 100px; } }
+@media (max-width: 736px) {
   .main-header {
     padding-top: 40px; }
 
@@ -324,13 +327,13 @@ MEDIA QUERIES
 @media (max-width: 1024px) {
   .primary-content,
   .secondary-content {
-    width: 90%; }
+    width: 100%; }
 
   .main-header {
     background: linear-gradient(#55bba7, #fff);
     height: 290px;
     margin-bottom: 0; } }
-@media (max-width: 768px) {
+@media (max-width: 736px) {
   .primary-content,
   .secondary-content {
     border-top: none; }
@@ -539,7 +542,11 @@ RIGHT COLUMN CONTENT
 /*******************************
 MEDIA QUERIES
 *******************************/
-@media (max-width: 764px) {
+@media (max-width: 1024px) {
+  .resume-main {
+    padding-right: 10px;
+    padding-left: 10px; } }
+@media (max-width: 736px) {
   .secondary-content.resume {
     display: none; } }
 .portfolio {
@@ -571,8 +578,11 @@ MEDIA QUERIES
         margin-bottom: 0; }
 
   .portfolio {
-    padding: 5% 0; } }
-@media (max-width: 764px) {
+    padding: 5% 0; }
+
+  .visit-github {
+    height: 210px; } }
+@media (max-width: 736px) {
   .portfolio-content {
     padding: 0 5px; }
     .portfolio-content > div {
@@ -594,7 +604,7 @@ MEDIA QUERIES
 /*******************************
 MEDIA QUERIES
 *******************************/
-@media (max-width: 768px) {
+@media (max-width: 736px) {
   .main-footer {
     padding: 20px 0; } }
 
