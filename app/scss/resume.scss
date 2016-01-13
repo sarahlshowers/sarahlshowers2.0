@@ -360,6 +360,27 @@ MEDIA QUERIES
     padding-right: 10px;
     padding-left: 10px;
   }
+
+  .resume-header {
+    padding: 50px 5%;
+  }
+
+  .col-right {
+    padding-right: 0;
+
+    .skills {
+      .layout {
+        &.row-second {
+          img {
+            &.ember{
+              position: absolute;
+              right: 76px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 736px) {
