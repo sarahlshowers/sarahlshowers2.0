@@ -581,7 +581,8 @@ MEDIA QUERIES
     padding: 5% 0; }
 
   .visit-github {
-    height: 210px; } }
+    height: auto;
+    width: 96%; } }
 @media (max-width: 736px) {
   .portfolio-content {
     padding: 0 5px; }
@@ -591,10 +592,7 @@ MEDIA QUERIES
   .portfolio {
     margin: 0 auto; }
     .portfolio > h5 {
-      display: none; }
-
-  .visit-github {
-    height: 171px; } }
+      display: none; } }
 .main-footer {
   padding-top: 20px;
   padding-bottom: 20px;

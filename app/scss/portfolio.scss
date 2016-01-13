@@ -42,7 +42,8 @@ MEDIA QUERIES
   }
 
   .visit-github {
-    height: 210px;
+    height: auto;
+    width: 96%;
   }
 }
 
@@ -60,9 +61,5 @@ MEDIA QUERIES
     > h5 {
       display: none;
     }
-  }
-
-  .visit-github {
-    height: 171px;
   }
 }
