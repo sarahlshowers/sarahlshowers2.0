@@ -556,7 +556,7 @@ MEDIA QUERIES
       position: absolute;
       right: 76px; } }
 @media (max-width: 736px) {
-  .secondary-content.resume {
+  .resume-container {
     display: none; } }
 .portfolio {
   padding-bottom: 100px; }
@@ -591,7 +591,8 @@ MEDIA QUERIES
 
   .visit-github {
     height: auto;
-    width: 96%; } }
+    width: 96%;
+    padding-left: 20px; } }
 @media (max-width: 736px) {
   .portfolio-content {
     padding: 0 5px; }

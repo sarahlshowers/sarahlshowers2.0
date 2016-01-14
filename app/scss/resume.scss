@@ -384,9 +384,7 @@ MEDIA QUERIES
 }
 
 @media (max-width: 736px) {
-  .secondary-content {
-    &.resume {
-      display: none;
-    }
+  .resume-container {
+    display: none;
   }
 }
