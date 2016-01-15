@@ -259,10 +259,9 @@ nav {
   top: 0;
   margin: 0;
   padding: 0 5%;
-  box-shadow: 0 1px 6px 1px #6b6b6b;
   width: 100%;
   height: 50px;
-  background: #55bba7;
+  background: rgba(57, 187, 161, 0.75);
   text-align: left;
   z-index: 1;
   transform: translate3d(0, -200px, 0); }
