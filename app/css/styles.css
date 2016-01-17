@@ -89,6 +89,11 @@ a:hover {
 a:active {
   color: lightcoral; }
 
+.panel a:link {
+  color: #fff; }
+.panel.visit-github {
+  color: #fff; }
+
 /*******************************
 CLEAR FIX
 *******************************/
@@ -214,11 +219,11 @@ TYPOGRAPHY: RESUME
   text-align: left; }
 
 /*******************************
-TYPOGRAPHY: RESUME
+TYPOGRAPHY: PORTFOLIO
 *******************************/
-.portfolio-content h4 {
-  margin-top: 10px;
-  margin-left: 13px; }
+.panel h4,
+.panel a {
+  color: #fff; }
 
 /*******************************
 TYPOGRAPHY: MEDIA QUERIES
@@ -566,12 +571,31 @@ MEDIA QUERIES
   padding: 0 40px; }
   .portfolio-content > div {
     display: inline-block;
-    width: 32%; }
-
-.visit-github {
-  height: 180px;
-  padding-bottom: 15px;
-  padding-left: 10px; }
+    position: relative; }
+    .portfolio-content > div:hover .panel {
+      display: table;
+      background-color: rgba(57, 187, 161, 0.75);
+      height: 183px;
+      width: 303px;
+      position: absolute;
+      top: 0px;
+      padding: 0 10%; }
+      .portfolio-content > div:hover .panel h4 {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 1.3; }
+  .portfolio-content div.panel {
+    display: none; }
+  .portfolio-content img {
+    height: auto;
+    width: 303px;
+    border-radius: 1px; }
+    .portfolio-content img.visit-github {
+      height: 183px;
+      display: inline-block; }
 
 /*******************************
 MEDIA QUERIES

@@ -44,6 +44,16 @@ a:active {
   color: $accent-light;
 }
 
+.panel {
+  a:link {
+    color: #fff;
+  }
+
+  &.visit-github {
+    color: #fff;
+  }
+}
+
 
 
 /*******************************
