@@ -105,27 +105,11 @@ nav {
 
 .intro {
   font-size: 1.25em;
-  line-height: 0.8;
+  line-height: 1.5;
 }
 
 .copyright {
   font-size: 0.75em;
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.3rem;
-    border: none;
-  }
-
-  h1 {
-    font-size: 3.3rem;
-    line-height: 1.1;
-  }
-
-  .intro {
-    font-size: 1rem;
-  }
 }
 
 
@@ -180,14 +164,32 @@ TYPOGRAPHY: MEDIA QUERIES
 *******************************/
 
 @media (max-width: 1024px) {
-  .portfolio-content {
+  h2 {
+    margin: 20px 0 40px 0;
+  }
+
+  .portfolio {
     h4 {
       margin-top: 0;
     }
   }
 }
 
-@media (max-width: 736px) {
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.3rem;
+    line-height: 1.1;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    border: none;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
 
   nav {
     h2 {
@@ -197,22 +199,6 @@ TYPOGRAPHY: MEDIA QUERIES
     p {
       font-size: 0.75rem;
     }
-  }
-
-  .title {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    border: none;
-  }
-
-  h1 {
-    font-size: 3.3rem;
-    line-height: 1.1;
-  }
-
-  .intro {
-    font-size: 1rem;
-    line-height: 1.8;
   }
 
   .portfolio-content {

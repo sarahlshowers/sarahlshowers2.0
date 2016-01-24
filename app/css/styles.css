@@ -181,22 +181,11 @@ nav a.white-override {
 
 .intro {
   font-size: 1.25em;
-  line-height: 0.8; }
+  line-height: 1.5; }
 
 .copyright {
   font-size: 0.75em; }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.3rem;
-    border: none; }
-
-  h1 {
-    font-size: 3.3rem;
-    line-height: 1.1; }
-
-  .intro {
-    font-size: 1rem; } }
 /*******************************
 TYPOGRAPHY: RESUME
 *******************************/
@@ -229,26 +218,28 @@ TYPOGRAPHY: PORTFOLIO
 TYPOGRAPHY: MEDIA QUERIES
 *******************************/
 @media (max-width: 1024px) {
-  .portfolio-content h4 {
+  h2 {
+    margin: 20px 0 40px 0; }
+
+  .portfolio h4 {
     margin-top: 0; } }
-@media (max-width: 736px) {
-  nav h2 {
-    font-size: 1.75rem; }
-  nav p {
-    font-size: 0.75rem; }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.3rem;
+    line-height: 1.1; }
 
   .title {
     font-size: 1.3rem;
     line-height: 1.5;
     border: none; }
 
-  h1 {
-    font-size: 3.3rem;
-    line-height: 1.1; }
-
   .intro {
-    font-size: 1rem;
-    line-height: 1.8; }
+    font-size: 1rem; }
+
+  nav h2 {
+    font-size: 1.75rem; }
+  nav p {
+    font-size: 0.75rem; }
 
   .portfolio-content h4 {
     margin-left: 17px; } }
@@ -622,8 +613,7 @@ MEDIA QUERIES
         margin-bottom: 0;
         width: 100%; }
         .portfolio-content > div img.visit-github {
-          height: 233px;
-          width: 96%; }
+          height: 233px; }
     .portfolio-content > div:nth-child(2n) {
       padding-right: 0;
       padding-left: 1%; }
