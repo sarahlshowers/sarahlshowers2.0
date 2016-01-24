@@ -582,21 +582,6 @@ MEDIA QUERIES
   .portfolio-content > div {
     display: inline-block;
     position: relative; }
-    .portfolio-content > div:hover .panel {
-      display: table;
-      background-color: rgba(57, 187, 161, 0.75);
-      height: 183px;
-      width: 303px;
-      position: absolute;
-      top: 0px;
-      padding: 0 10%; }
-      .portfolio-content > div:hover .panel h4 {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        width: 100%;
-        font-size: 1.3rem;
-        line-height: 1.3; }
   .portfolio-content div.panel {
     display: none; }
   .portfolio-content img {
@@ -610,22 +595,41 @@ MEDIA QUERIES
 /*******************************
 MEDIA QUERIES
 *******************************/
+@media (min-width: 1025px) {
+  .portfolio-link:hover .panel {
+    display: table;
+    background-color: rgba(57, 187, 161, 0.75);
+    height: 183px;
+    width: 303px;
+    position: absolute;
+    top: 0px;
+    padding: 0 10%; }
+    .portfolio-link:hover .panel h4 {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 100%;
+      font-size: 1.3rem;
+      line-height: 1.3; } }
 @media (max-width: 1024px) {
   .portfolio-content {
     padding: 0 30px; }
     .portfolio-content > div {
       width: 49%;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      padding-right: 1%; }
       .portfolio-content > div img {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        width: 100%; }
+        .portfolio-content > div img.visit-github {
+          height: 233px;
+          width: 96%; }
+    .portfolio-content > div:nth-child(2n) {
+      padding-right: 0;
+      padding-left: 1%; }
 
   .portfolio {
-    padding: 5% 0; }
-
-  .visit-github {
-    height: auto;
-    width: 96%;
-    padding-left: 20px; } }
+    padding: 5% 0; } }
 @media (max-width: 736px) {
   .portfolio-content {
     padding: 0 5px; }
