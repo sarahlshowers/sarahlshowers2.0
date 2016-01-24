@@ -368,6 +368,10 @@ MEDIA QUERIES
 *******************************/
 
 @media (max-width: 1024px) {
+  p, li {
+    font-size: 0.9rem;
+  }
+
   .resume-main {
     padding-right: 10px;
     padding-left: 10px;
@@ -377,20 +381,17 @@ MEDIA QUERIES
     padding: 50px 5%;
   }
 
+  .col-left {
+    padding-left: 20px;
+  }
+
   .col-right {
     padding-right: 0;
 
-    .skills {
-      .layout {
-        &.row-second {
-          img {
-            &.ember{
-              position: absolute;
-              right: 76px;
-            }
-          }
-        }
-      }
+    .ember{
+      position: absolute;
+      left: 50%;
+      margin-left: -30px;
     }
   }
 }
