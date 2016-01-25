@@ -25,3 +25,23 @@ $(function() {
   });
 
 });
+
+/*******************************
+Check for touch devices
+*******************************/
+function is_touch_device() {
+  try {
+    document.createEvent('TouchEvent');
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+var htmlEl = document.querySelector('html');
+
+if (is_touch_device()) {
+  htmlEl.classList.add('touch');
+} else {
+  htmlEl.classList.add('no-touch');
+}
