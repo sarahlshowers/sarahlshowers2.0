@@ -89,15 +89,21 @@ MEDIA QUERIES
 
 @media (max-width: 736px) {
   .portfolio-content {
+    padding: 0 5%;
+
     > div {
       width: 100%;
+      padding: 0;
     }
 
-    padding: 0 5px;
+    > div:nth-child(2n) {
+      padding: 0;
+    }
   }
 
-  .portfolio {
+  .secondary-content.portfolio {
     margin: 0 auto;
+    padding-bottom: 20px;
     > h5 {
       display: none;
     }

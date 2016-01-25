@@ -54,15 +54,18 @@ MEDIA QUERIES
 @media (max-width: 1024px) {
   .main-header {
     padding-top: 100px;
+    background-position-x: -30px;
   }
+
 }
 
 @media (max-width: 736px) {
   .main-header {
     padding-top: 40px;
+    height: 290px;
   }
 
   nav{
-    padding-left: 0;
+    padding: 0 5%;
   }
 }

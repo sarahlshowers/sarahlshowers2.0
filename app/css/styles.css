@@ -284,13 +284,15 @@ MEDIA QUERIES
 *******************************/
 @media (max-width: 1024px) {
   .main-header {
-    padding-top: 100px; } }
+    padding-top: 100px;
+    background-position-x: -30px; } }
 @media (max-width: 736px) {
   .main-header {
-    padding-top: 40px; }
+    padding-top: 40px;
+    height: 290px; }
 
   nav {
-    padding-left: 0; } }
+    padding: 0 5%; } }
 /*******************************
 LAYOUT STYLES
 *******************************/
@@ -324,12 +326,7 @@ MEDIA QUERIES
 @media (max-width: 1024px) {
   .primary-content,
   .secondary-content {
-    width: 100%; }
-
-  .main-header {
-    background: linear-gradient(#55bba7, #fff);
-    height: 290px;
-    margin-bottom: 0; } }
+    width: 100%; } }
 @media (max-width: 736px) {
   .primary-content,
   .secondary-content {
@@ -337,7 +334,7 @@ MEDIA QUERIES
 
   .primary-content {
     width: 80%;
-    padding: 40px 10px 20px; } }
+    padding: 0px 10px 20px; } }
 .resume-container {
   margin-left: 50px;
   margin-right: 50px;
@@ -569,7 +566,10 @@ MEDIA QUERIES
       margin-left: -30px; } }
 @media (max-width: 736px) {
   .resume-container {
-    display: none; } }
+    display: none; }
+
+  .secondary-content.resume {
+    padding: 20px 0; } }
 .portfolio {
   padding-bottom: 100px; }
 
@@ -629,13 +629,17 @@ MEDIA QUERIES
     padding: 5% 0; } }
 @media (max-width: 736px) {
   .portfolio-content {
-    padding: 0 5px; }
+    padding: 0 5%; }
     .portfolio-content > div {
-      width: 100%; }
+      width: 100%;
+      padding: 0; }
+    .portfolio-content > div:nth-child(2n) {
+      padding: 0; }
 
-  .portfolio {
-    margin: 0 auto; }
-    .portfolio > h5 {
+  .secondary-content.portfolio {
+    margin: 0 auto;
+    padding-bottom: 20px; }
+    .secondary-content.portfolio > h5 {
       display: none; } }
 .main-footer {
   padding-top: 20px;
