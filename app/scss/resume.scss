@@ -224,12 +224,16 @@ RIGHT COLUMN CONTENT
       margin-left: -80px;
 
       &.row-first {
+        padding-bottom: 5%;
+
         img {
           padding-left: 0.5rem;
         }
       }
 
       &.row-second {
+        padding-bottom: 5%;
+
         img {
           &:last-child {
             position: absolute;
@@ -240,6 +244,7 @@ RIGHT COLUMN CONTENT
       }
 
       &.row-third {
+        padding-bottom: 5%;
         padding-left: 10%;
 
         img {
@@ -251,10 +256,13 @@ RIGHT COLUMN CONTENT
       }
 
       &.row-fourth {
+        padding-bottom: 5%;
         padding-left: 13%;
       }
 
       &.row-fifth {
+        padding-bottom: 5%;
+
         img {
           margin-bottom: 0;
         }

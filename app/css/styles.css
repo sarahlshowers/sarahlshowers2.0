@@ -66,8 +66,7 @@ BASE PAGE STYLES
   border-bottom: 2px solid lightgray; }
 
 img {
-  max-width: 100%;
-  margin-bottom: 20px; }
+  max-width: 100%; }
 
 ul,
 ol {
@@ -474,21 +473,29 @@ RIGHT COLUMN CONTENT
       position: relative;
       left: 50%;
       margin-left: -80px; }
-      .col-right .skills .layout.row-first img {
-        padding-left: 0.5rem; }
-      .col-right .skills .layout.row-second img:last-child {
-        position: absolute;
-        bottom: 8px;
-        right: 116px; }
+      .col-right .skills .layout.row-first {
+        padding-bottom: 5%; }
+        .col-right .skills .layout.row-first img {
+          padding-left: 0.5rem; }
+      .col-right .skills .layout.row-second {
+        padding-bottom: 5%; }
+        .col-right .skills .layout.row-second img:last-child {
+          position: absolute;
+          bottom: 8px;
+          right: 116px; }
       .col-right .skills .layout.row-third {
+        padding-bottom: 5%;
         padding-left: 10%; }
         .col-right .skills .layout.row-third img:first-child {
           margin-bottom: 33px;
           padding-right: 0.5rem; }
       .col-right .skills .layout.row-fourth {
+        padding-bottom: 5%;
         padding-left: 13%; }
-      .col-right .skills .layout.row-fifth img {
-        margin-bottom: 0; }
+      .col-right .skills .layout.row-fifth {
+        padding-bottom: 5%; }
+        .col-right .skills .layout.row-fifth img {
+          margin-bottom: 0; }
   .col-right .achievements ul {
     margin: 0; }
   .col-right .achievements li {
@@ -586,9 +593,6 @@ MEDIA QUERIES
     height: auto;
     width: 303px;
     border-radius: 1px; }
-    .portfolio-content img.visit-github {
-      height: 183px;
-      display: inline-block; }
 
 .portfolio-link {
   display: block;
@@ -599,7 +603,7 @@ MEDIA QUERIES
   background-color: rgba(57, 187, 161, 0.75);
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 2px;
   left: 0;
   position: absolute;
   padding: 0 10%; }
@@ -628,8 +632,6 @@ MEDIA QUERIES
       .portfolio-content > div img {
         margin-bottom: 0;
         width: 100%; }
-        .portfolio-content > div img.visit-github {
-          height: 233px; }
     .portfolio-content > div:nth-child(2n) {
       padding-right: 0;
       padding-left: 1%; }
